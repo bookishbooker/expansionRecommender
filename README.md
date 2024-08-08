@@ -27,7 +27,7 @@ The expansionRecommender makes use of a few modules that are not available by de
 
 - ZeroMQ (pyzmq) - [Documentation](https://pyzmq.readthedocs.io/en/latest/#)
 - JSON - [Documentation](https://docs.python.org/3/library/json.html)
-- Requests - {Documentation](https://requests.readthedocs.io/en/latest/)
+- Requests - [Documentation](https://requests.readthedocs.io/en/latest/)
 - xml.etree.ElementTree - [Documentation](https://docs.python.org/3/library/xml.etree.elementtree.html)
 
 Additionally, ensure that you've imported the csv_search module included in the file as well.
