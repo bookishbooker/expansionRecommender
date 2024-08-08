@@ -8,7 +8,6 @@ socket = context.socket(mq.REQ)
 socket.connect("tcp://localhost:5555")
 socket.send_string("Bloodborne: The Card Game")
 message = json.loads(socket.recv())
-
 if __name__ == "__main__":
     for dic in message:
         print(dic["name"])

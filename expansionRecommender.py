@@ -11,7 +11,7 @@ while True:
     message = socket.recv()
     search_id = search.search_by_name(message.decode())
     if search_id is None:
-        socket.send_string("Game not found")
+        socket.send_json("Game not found")
         print("whoops")
     else:
         search_id = str(search_id.loc[0, "bgg_id"])
