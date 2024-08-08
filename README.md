@@ -33,3 +33,4 @@ The expansionRecommender makes use of a few modules that are not available by de
 Additionally, ensure that you've imported the csv_search module included in the file as well.
 
 ## UML Sequence Diagram
+![Sequence Diagram](/expansionRecommender.png)
