@@ -1,4 +1,6 @@
 # expansionRecommender
+For use by Anthony Prudent.
+Special thanks to Markus Shepherd for making the boardgamegeek database .csv file publicly avilable for use with this project. [Link to his GitLab](https://gitlab.com/mshepherd)
 ## Program Usage
 This expansion recommendation program uses expansionRecommender.py as a server. It accepts strings representing the names of board games as requests and uses the function from bgg_game_finder.py to search a .csv database containing a majority of the boardgame data hosted on the website BoardGameGeek.com. It uses the data from said data base to parse xml data from the website and return the titles, average rating, thumbnails, and link to the game's three most popular expansions as a list of dictionaries.
 
