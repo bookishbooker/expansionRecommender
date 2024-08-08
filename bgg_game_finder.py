@@ -39,11 +39,11 @@ while True:
                     continue
                 else:
                     name = expansion_data[0].find("name").get("value")
-                    thumbnail = expansion_data[0].find("thumbnail")
+                    thumbnail = expansion_data[0].find("thumbnail").text
                     link = f"https://boardgamegeek.com/boardgameexpansion/{expansion_id}"
                     expansion_object = {
                         "name": str(name),
-                        "thumbnail": str(thumbnail),
+                        "thumbnail": thumbnail,
                         "rating": bayes_avg,
                         "link": link
                     }
