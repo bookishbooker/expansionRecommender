@@ -9,6 +9,8 @@ socket.bind("tcp://*:5555")
 
 while True:
     message = socket.recv()
+    if message == "Q":
+        break
     search_id = search.search_by_name(message.decode())
     if search_id is None:
         socket.send_json("Game not found")
@@ -69,3 +71,4 @@ while True:
 
         socket.send_json(rec_list)
         print("done")
+context.destroy()

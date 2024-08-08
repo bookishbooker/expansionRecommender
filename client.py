@@ -17,3 +17,4 @@ if __name__ == "__main__":
         )
         img = Image.open("game_thumbnail.png")
         img.show()
+    socket.send_string("Q")
